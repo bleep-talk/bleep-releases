@@ -9,6 +9,10 @@ operator before enrolling a new installation.
 
 ## 1. Install or update
 
+Use native Apple Silicon Homebrew. `brew config` should report `Rosetta 2: false`.
+An Intel/Rosetta Homebrew installation cannot install this ARM64 formula; if you
+have both installations, use the native one (normally `/opt/homebrew/bin/brew`).
+
 ```sh
 brew install bleep-talk/bleep/bleep
 BLEEP="$(brew --prefix)/bin/bleep"
